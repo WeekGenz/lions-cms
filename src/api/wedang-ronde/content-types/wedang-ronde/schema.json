@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wedang_rondes",
+  "info": {
+    "singularName": "wedang-ronde",
+    "pluralName": "wedang-rondes",
+    "displayName": "Wedang Ronde",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 160,
+      "minLength": 6
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Wedang": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Author": {
+      "type": "string",
+      "default": "Admin | Lions Jakarta",
+      "required": true,
+      "maxLength": 80,
+      "minLength": 10
+    }
+  }
+}

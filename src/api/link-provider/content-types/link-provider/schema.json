@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "link_providers",
+  "info": {
+    "singularName": "link-provider",
+    "pluralName": "link-providers",
+    "displayName": "Link Provider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Provider": {
+      "type": "enumeration",
+      "enum": [
+        "Joint",
+        "Donate"
+      ],
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": true,
+      "regex": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+    }
+  }
+}

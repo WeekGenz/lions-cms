@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_sections",
+  "info": {
+    "singularName": "news-section",
+    "pluralName": "news-sections",
+    "displayName": "News Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ShortDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 350,
+      "minLength": 20
+    },
+    "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::new.new"
+    }
+  }
+}

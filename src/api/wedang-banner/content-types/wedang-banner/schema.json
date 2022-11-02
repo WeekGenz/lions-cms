@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wedang_banners",
+  "info": {
+    "singularName": "wedang-banner",
+    "pluralName": "wedang-banners",
+    "displayName": "Wedang Banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
